@@ -24,7 +24,7 @@ void PrintArray(int[,] array) //метод печати массива
 {
     for (int i = 0; i < array.GetLength(0); i++)//0-строки
     {
-        for (int j = 0; j < array.GetLength(1); j++)//1-строки
+        for (int j = 0; j < array.GetLength(1); j++)//1-столбцы
         {
             Console.Write(array[i, j] + " ");
         }
