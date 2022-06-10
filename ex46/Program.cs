@@ -13,7 +13,7 @@ int[,] GetArray(int a, int b) //метод заполнения массива �
     {
         for (int j = 0; j < array.GetLength(1); j++)//1-строки
         {
-            array[i, j]=rnd.Next(0,10); //или array[i, j]=rnd.Next(10);
+            array[i, j] = rnd.Next(0, 10); //или array[i, j]=rnd.Next(10);
         }
     }
     return array;
@@ -26,12 +26,12 @@ void PrintArray(int[,] array) //метод печати массива
     {
         for (int j = 0; j < array.GetLength(1); j++)//1-строки
         {
-            Console.Write(array[i,j]+" ");
+            Console.Write(array[i, j] + " ");
         }
         Console.WriteLine();
     }
 }
 
 
-int[,]arrayResult=GetArray(5,7);
+int[,] arrayResult = GetArray(5, 7);
 PrintArray(arrayResult);
